@@ -384,7 +384,7 @@ section {
   color: var(--secondary-text-color);
 }
 
-/* === أكواد الشهادات === */
+/* === أكواد الشهادات (تم تعديل .cert__box) === */
 
 .certs {
   background-color: var(--bg-color); 
@@ -397,10 +397,9 @@ section {
   margin-top: 3rem;
 }
 
-/* === كود جديد عشان اللينك ميبقاش أزرق === */
 .cert__link {
-  text-decoration: none; /* شيل الخط اللي تحت اللينك */
-  color: inherit; /* خلي لون الكلام عادي */
+  text-decoration: none; 
+  color: inherit; 
 }
 
 .cert__box {
@@ -410,7 +409,14 @@ section {
   padding: 2.5rem; 
   text-align: center;
   transition: all 0.3s ease;
-  height: 100%; /* عشان الكارتين يبقوا نفس الطول */
+  height: 100%; 
+  
+  /* --- الأكواد الجديدة لتنظيم النص --- */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* ---------------------------------- */
 }
 
 .cert__box:hover {
@@ -439,7 +445,6 @@ section {
     font-size: 1.1rem;
   }
   
-  /* --- تعديلات About Me للموبايل --- */
   .about__columns {
     flex-direction: column; 
   }
@@ -450,7 +455,6 @@ section {
     justify-content: center; 
   }
 
-  /* --- تعديلات Work للموبايل --- */
   .work__box,
   .work__box:nth-child(even) {
     grid-template-columns: 1fr;
@@ -469,7 +473,6 @@ section {
     transform: translateX(-50%);
   }
   
-  /* --- تعديلات الشهادات للموبايل --- */
   .certs__grid {
     grid-template-columns: 1fr; 
   }
