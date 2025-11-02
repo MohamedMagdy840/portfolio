@@ -392,14 +392,10 @@ section {
 
 .certs__grid {
   display: grid;
-  /* --- هذا هو السطر الذي تم تعديله --- */
-  grid-template-columns: 1fr; /* خليها عمود واحد (فوق بعض) */
-  /* --------------------------------- */
+  /* --- رجعناهم جنب بعض --- */
+  grid-template-columns: 1fr 1fr; 
   gap: 2rem;
   margin-top: 3rem;
-  max-width: 700px; /* حدد عرض أقصى عشان متبقاش عريضة أوي */
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .cert__link {
@@ -427,11 +423,13 @@ section {
 }
 
 .cert__title {
-  /* --- هذا هو السطر الذي تم تعديله (رجعنا الفونت كبير) --- */
-  font-size: 1.25rem; 
-  /* ----------------------------------------------- */
+  /* --- صغرنا الفونت عشان ييجي على سطر واحد --- */
+  font-size: 0.95rem; 
+  /* ------------------------------------- */
   font-weight: 600;
   color: var(--primary-text-color);
+  text-transform: uppercase; /* خللي الحروف كابيتال عشان الشكل يبقى أحسن */
+  letter-spacing: 0.5px; /* مسافة بسيطة بين الحروف */
 }
 
 
@@ -477,10 +475,11 @@ section {
     transform: translateX(-50%);
   }
   
-  /* مش محتاجين ده في الموبايل خلاص لأنه بقى الأساسي */
-  /*
   .certs__grid {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr; /* في الموبايل بس هيبقوا فوق بعض */
   }
-  */
+  
+  .cert__title {
+    font-size: 1.1rem; /* نرجع الفونت كبير تاني في الموبايل */
+  }
 }
