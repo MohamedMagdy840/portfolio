@@ -384,7 +384,7 @@ section {
   color: var(--secondary-text-color);
 }
 
-/* === أكواد الشهادات (تم تعديل .cert__box) === */
+/* === أكواد الشهادات (تم تعديل .cert__title) === */
 
 .certs {
   background-color: var(--bg-color); 
@@ -410,13 +410,10 @@ section {
   text-align: center;
   transition: all 0.3s ease;
   height: 100%; 
-  
-  /* --- الأكواد الجديدة لتنظيم النص --- */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* ---------------------------------- */
 }
 
 .cert__box:hover {
@@ -425,7 +422,9 @@ section {
 }
 
 .cert__title {
-  font-size: 1.25rem;
+  /* --- هذا هو السطر الذي تم تعديله --- */
+  font-size: 1.15rem; 
+  /* --------------------------------- */
   font-weight: 600;
   color: var(--primary-text-color);
 }
