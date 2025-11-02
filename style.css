@@ -423,7 +423,7 @@ section {
 
 .cert__title {
   /* --- هذا هو السطر الذي تم تعديله --- */
-  font-size: 1.15rem; 
+  font-size: 1.05rem; 
   /* --------------------------------- */
   font-weight: 600;
   color: var(--primary-text-color);
