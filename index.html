@@ -1,133 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mohamed Magdy - DevOps Engineer</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h1>Mohamed Magdy Abudeif Kotb</h1>
-            <h2>DevOps Engineer</h2>
-            <nav class="contact-links">
-                <a href="mailto:mohamedmagdyy840@gmail.com">mohamedmagdyy840@gmail.com</a> |
-                <a href="https://inlinkedin.com/in/mohamed-magdy-a5b1aa232" target="_blank">LinkedIn</a> |
-                <a href="https://github.com/MohamedMagdy840" target="_blank">GitHub</a> |
-                <span>01025088201 / 01284145711</span>
-            </nav>
-        </header>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <a href="#hero" class="navbar__logo">Mohamed Magdy</a>
+        <ul class="navbar__menu">
+          <li><a href="#about" class="navbar__link">About</a></li>
+          <li><a href="#work" class="navbar__link">My Work</a></li>
+          <li><a href="#contact" class="navbar__link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-        <section id="summary">
-            <h3>Professional Summary</h3>
-            <p>DevOps Engineer experienced in designing and automating cloud infrastructure using AWS, Kubernetes, and Infrastructure as Code (IaC). Skilled in CI/CD, observability, and GitOps to build scalable, secure, and cost-efficient systems. AWS Certified Solutions Architect - Associate and DevOps Instructor at NTI and ITI.</p>
-        </section>
+    <main>
+      <section class="hero" id="hero">
+        <div class="hero__content">
+          <h1 class="hero__title">
+            Hi! I am Mohamed Magdy
+          </h1>
+          <p class="hero__description">
+            A DevOps Engineer focused on building scalable, secure, and cost-efficient cloud systems.
+          </p>
+          <a href="#work" class="hero__button">View My Work</a>
+        </div>
+      </section>
 
-        <section id="skills">
-            <h3>Technical Skills</h3>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <strong>DevOps & Cloud</strong>
-                    <p>Linux I and II, Docker, Kubernetes, Helm, Kustomize, ArgoCD, Terraform, Ansible, Jenkins, Cloudflare</p>
-                </div>
-                <div class="skill-category">
-                    <strong>AWS</strong>
-                    <p>EKS, ECS, EC2, Lambda, RDS, DynamoDB, S3, API Gateway, Bedrock</p>
-                </div>
-                <div class="skill-category">
-                    <strong>Observability & Monitoring</strong>
-                    <p>Prometheus, Grafana, AWS CloudWatch, SonarQube, Trivy</p>
-                </div>
-                <div class="skill-category">
-                    <strong>Security</strong>
-                    <p>AWS WAF, Cloudflare Security, IAM Policies, Encryption</p>
-                </div>
-                <div class="skill-category">
-                    <strong>Scripting & Automation</strong>
-                    <p>Bash, Python</p>
-                </div>
-                <div class="skill-category">
-                    <strong>Version Control</strong>
-                    <p>Git, GitHub, GitLab, Azure DevOps</p>
-                </div>
-                <div class="skill-category">
-                    <strong>Networking</strong>
-                    <p>CCNA & CCNP Fundamentals</p>
-                </div>
+      <section class="about" id="about">
+        <div class="about__content">
+          <h2 class="section__title">About Me</h2>
+          <p class="about__description">
+            I'm a DevOps Engineer experienced in designing and automating cloud infrastructure using AWS, Kubernetes, and Infrastructure as Code (IaC). I am skilled in CI/CD, observability, and GitOps, and I'm an AWS Certified Solutions Architect - Associate.
+          </p>
+          <h3 class="about__subtitle">Technical Skills</h3>
+          <div class="about__skills">
+            <span class="skill">AWS (EKS, Lambda, S3)</span>
+            <span class="skill">Kubernetes</span>
+            <span class="skill">Docker</span>
+            <span class="skill">Terraform</span>
+            <span class="skill">ArgoCD</span>
+            <span class="skill">Jenkins</span>
+            <span class="skill">Prometheus</span>
+            <span class="skill">Grafana</span>
+            <span class="skill">Python</span>
+            <span class="skill">Bash</span>
+            <span class="skill">Cloudflare</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="work" id="work">
+        <h2 class="section__title">My Work</h2>
+        <p class="work__description">
+          Here are some highlights of my professional experience.
+        </p>
+        <div class="work__grid">
+          
+          <div class="work__box">
+            <div class="work__text">
+              <h3>EKS Orchestration & Cost Optimization</h3>
+              <p>
+                Architected production EKS clusters for high-performance microservices. Reduced infrastructure costs by up to 20% by implementing Karpenter for intelligent autoscaling.
+              </p>
+              <ul class="work__list">
+                <li>AWS EKS</li>
+                <li>Kubernetes</li>
+                <li>Karpenter</li>
+                <li>Microservices</li>
+              </ul>
             </div>
-        </section>
+            <div class="work__image-box">
+              <img src="httpsEKS.png" class="work__image" alt="EKS Architecture" />
+              </div>
+          </div>
 
-        <section id="experience">
-            <h3>Professional Experience</h3>
-            
-            <div class="job">
-                <h4>DevOps Engineer</h4>
-                <div class="job-header">
-                    <strong>Nagwa-Technology</strong>
-                    <span>08/2024 - Present</span>
-                </div>
-
-                <h5>Container Orchestration & GitOps</h5>
-                <ul>
-                    <li>Architected and maintained production EKS clusters ensuring 99.9%+ uptime for high-performance microservices.</li>
-                    <li>Optimized microservices deployment on AWS EKS by implementing Karpenter for intelligent autoscaling, improving resource efficiency and reducing infrastructure costs by up to 20%.</li>
-                    <li>Implemented GitOps workflows with ArgoCD, enabling version-controlled and automated deployments with rollback capabilities.</li>
-                    <li>Standardized deployments across environments using Helm charts and Kustomize overlays, reducing configuration drift.</li>
-                </ul>
-
-                <h5>Serverless Architecture & Cloud Automation</h5>
-                <ul>
-                    <li>Designed and deployed serverless architectures using Lambda, API Gateway, SQS, SNS, DynamoDB, and Aurora RDS for scalable event-driven workflows.</li>
-                </ul>
-
-                <h5>Infrastructure as Code, Security & Observability</h5>
-                <ul>
-                    <li>Automated environment provisioning using Terraform for consistent, version-controlled infrastructure.</li>
-                    <li>Integrated SonarQube and Trivy into CI/CD pipelines for vulnerability scanning and code quality assurance.</li>
-                    <li>Managed DNS, CDN, and security with Cloudflare, implementing R2 for cost-effective object storage.</li>
-                    <li>Enhanced observability using Prometheus, Grafana, and AWS CloudWatch for proactive monitoring and performance tuning.</li>
-                </ul>
+          <div class="work__box">
+            <div class="work__text">
+              <h3>GitOps & CI/CD Security</h3>
+              <p>
+                Implemented GitOps workflows with ArgoCD for version-controlled, automated deployments. Integrated SonarQube and Trivy into CI/CD pipelines for vulnerability scanning.
+              </p>
+              <ul class="work__list">
+                <li>ArgoCD</li>
+                <li>Helm / Kustomize</li>
+                <li>Jenkins</li>
+                <li>SonarQube / Trivy</li>
+              </ul>
             </div>
-
-            <div class="job">
-                <h4>DevOps Engineer Intern</h4>
-                <div class="job-header">
-                    <strong>IT-Visionary Company</strong>
-                    <span>06/2024 - 07/2024</span>
-                </div>
-                <ul>
-                    <li>Built and maintained CI/CD pipelines using Jenkins for automated deployments.</li>
-                    <li>Worked with Docker, Kubernetes, and AWS Cloud to automate application deployment and monitoring.</li>
-                    <li>Gained hands-on experience in infrastructure as code and cloud computing.</li>
-                </ul>
+             <div class="work__image-box">
+              <img src="httpsGitOps.png" class="work__image" alt="GitOps Workflow" />
             </div>
-        </section>
+          </div>
 
-        <section id="education">
-            <h3>Education</h3>
-            <div class="education-item">
-                <strong>DevOps & Automation Diploma (4-Month Program)</strong>
-                <p>National Telecommunication Institute (NTI), MCIT (02/2024 - 05/2024)</p>
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Serverless & Event-Driven Workflows</h3>
+              <p>
+                Designed and deployed serverless architectures using Lambda, API Gateway, SQS, SNS, and DynamoDB for scalable event-driven workflows.
+              </p>
+              <ul class="work__list">
+                <li>AWS Lambda</li>
+                <li>API Gateway</li>
+                <li>SQS / SNS</li>
+                <li>DynamoDB</li>
+              </ul>
             </div>
-            <div class="education-item">
-                <strong>Bachelor's Degree in Communications & Electronics Engineering</strong>
-                <p>Alexandria University (09/2017 - 07/2022)</p>
-                <p><em>Graduated with Very Good with Honors</em></p>
+             <div class="work__image-box">
+              <img src="httpsLambda.png" class="work__image" alt="Serverless Architecture" />
             </div>
-        </section>
+          </div>
 
-        <section id="certificates">
-            <h3>Certificates</h3>
-            <ul>
-                <li>AWS Certified Solutions Architect - Associate</li>
-                <li>AWS Certified Cloud Practitioner</li>
-            </ul>
-        </section>
-        
-        <footer>
-            <p>Military Service: Completed</p>
-        </footer>
-    </div>
-</body>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="contact__content">
+          <h2 class="section__title">Get in Touch</h2>
+          <p class="contact__description">
+            I'm open to new opportunities and collaborations. Feel free to reach out.
+          </p>
+          <a href="mailto:mohamedmagdyy840@gmail.com" class="hero__button"
+            >Email Me</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <ul class="footer__social-links">
+          <li class="footer__social-link-item">
+            <a href="https://github.com/MohamedMagdy840" target="_blank">GitHub</a>
+          </li>
+          <li class="footer__social-link-item">
+            <a href="https://inlinkedin.com/in/mohamed-magdy-a5b1aa232" target="_blank">LinkedIn</a>
+          </li>
+        </ul>
+        <p>
+          &copy; 2025 - Mohamed Magdy Kotb
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
