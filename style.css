@@ -384,31 +384,38 @@ section {
   color: var(--secondary-text-color);
 }
 
-/* === الأكواد الجديدة الخاصة بالشهادات === */
+/* === أكواد الشهادات === */
 
 .certs {
-  background-color: var(--bg-color); /* نفس لون خلفية الصفحة */
+  background-color: var(--bg-color); 
 }
 
 .certs__grid {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* عمودين جنب بعض */
+  grid-template-columns: 1fr 1fr; 
   gap: 2rem;
   margin-top: 3rem;
 }
 
+/* === كود جديد عشان اللينك ميبقاش أزرق === */
+.cert__link {
+  text-decoration: none; /* شيل الخط اللي تحت اللينك */
+  color: inherit; /* خلي لون الكلام عادي */
+}
+
 .cert__box {
-  background-color: var(--card-bg-color); /* نفس لون الكروت */
+  background-color: var(--card-bg-color); 
   border: 1px solid var(--border-color);
   border-radius: 8px;
-  padding: 2.5rem; /* بادينج أكبر شوية */
+  padding: 2.5rem; 
   text-align: center;
   transition: all 0.3s ease;
+  height: 100%; /* عشان الكارتين يبقوا نفس الطول */
 }
 
 .cert__box:hover {
-  transform: translateY(-5px); /* حركة بسيطة عند الهوفر */
-  border-color: var(--primary-color); /* البرواز يلون */
+  transform: translateY(-5px); 
+  border-color: var(--primary-color); 
 }
 
 .cert__title {
@@ -434,13 +441,13 @@ section {
   
   /* --- تعديلات About Me للموبايل --- */
   .about__columns {
-    flex-direction: column; /* خليهم تحت بعض في الموبايل */
+    flex-direction: column; 
   }
   .about__right-column {
-    text-align: center; /* خلي الكلام في النص */
+    text-align: center; 
   }
   .about__skills {
-    justify-content: center; /* خلي المهارات في النص */
+    justify-content: center; 
   }
 
   /* --- تعديلات Work للموبايل --- */
@@ -455,7 +462,7 @@ section {
     order: 2;
   }
   .work .section__title {
-    text-align: center; /* خلي العنوان في النص */
+    text-align: center; 
   }
   .work .section__title::after {
     left: 50%;
@@ -464,6 +471,6 @@ section {
   
   /* --- تعديلات الشهادات للموبايل --- */
   .certs__grid {
-    grid-template-columns: 1fr; /* خليهم تحت بعض */
+    grid-template-columns: 1fr; 
   }
 }
