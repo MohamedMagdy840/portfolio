@@ -384,7 +384,7 @@ section {
   color: var(--secondary-text-color);
 }
 
-/* === أكواد الشهادات (تم تعديل .cert__title) === */
+/* === أكواد الشهادات (تم تعديل .certs__grid و .cert__title) === */
 
 .certs {
   background-color: var(--bg-color); 
@@ -392,9 +392,14 @@ section {
 
 .certs__grid {
   display: grid;
-  grid-template-columns: 1fr 1fr; 
+  /* --- هذا هو السطر الذي تم تعديله --- */
+  grid-template-columns: 1fr; /* خليها عمود واحد (فوق بعض) */
+  /* --------------------------------- */
   gap: 2rem;
   margin-top: 3rem;
+  max-width: 700px; /* حدد عرض أقصى عشان متبقاش عريضة أوي */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .cert__link {
@@ -422,9 +427,9 @@ section {
 }
 
 .cert__title {
-  /* --- هذا هو السطر الذي تم تعديله --- */
-  font-size: 1.05rem; 
-  /* --------------------------------- */
+  /* --- هذا هو السطر الذي تم تعديله (رجعنا الفونت كبير) --- */
+  font-size: 1.25rem; 
+  /* ----------------------------------------------- */
   font-weight: 600;
   color: var(--primary-text-color);
 }
@@ -472,7 +477,10 @@ section {
     transform: translateX(-50%);
   }
   
+  /* مش محتاجين ده في الموبايل خلاص لأنه بقى الأساسي */
+  /*
   .certs__grid {
     grid-template-columns: 1fr; 
   }
+  */
 }
