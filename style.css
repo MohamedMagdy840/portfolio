@@ -392,10 +392,14 @@ section {
 
 .certs__grid {
   display: grid;
-  /* --- رجعناهم جنب بعض --- */
-  grid-template-columns: 1fr 1fr; 
+  /* --- خليناها عمود واحد (فوق بعض) --- */
+  grid-template-columns: 1fr; 
   gap: 2rem;
   margin-top: 3rem;
+  /* --- عشان متبقاش عريضة أوي --- */
+  max-width: 700px; 
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .cert__link {
@@ -407,7 +411,7 @@ section {
   background-color: var(--card-bg-color); 
   border: 1px solid var(--border-color);
   border-radius: 8px;
-  padding: 2.5rem; 
+  padding: 2rem; /* قللنا البادينج شوية عشان الشكل */
   text-align: center;
   transition: all 0.3s ease;
   height: 100%; 
@@ -423,13 +427,10 @@ section {
 }
 
 .cert__title {
-  /* --- صغرنا الفونت عشان ييجي على سطر واحد --- */
-  font-size: 0.95rem; 
-  /* ------------------------------------- */
+  /* --- رجعنا الفونت كبير تاني --- */
+  font-size: 1.25rem; 
   font-weight: 600;
   color: var(--primary-text-color);
-  text-transform: uppercase; /* خللي الحروف كابيتال عشان الشكل يبقى أحسن */
-  letter-spacing: 0.5px; /* مسافة بسيطة بين الحروف */
 }
 
 
@@ -475,11 +476,5 @@ section {
     transform: translateX(-50%);
   }
   
-  .certs__grid {
-    grid-template-columns: 1fr; /* في الموبايل بس هيبقوا فوق بعض */
-  }
-  
-  .cert__title {
-    font-size: 1.1rem; /* نرجع الفونت كبير تاني في الموبايل */
-  }
+  /* مش محتاجين أي تعديل للشهادات في الموبايل لأنها بقت عمود واحد */
 }
