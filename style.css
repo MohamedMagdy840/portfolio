@@ -216,24 +216,19 @@ section {
 }
 
 
-/* === CV Button Style (تم التعديل) === */
+/* CV Button Style (الزرار الشفاف) */
 .hero__button--secondary {
-  /* السطور دي اتشالت عشان ياخد اللون الأحمر الأساسي */
-  /* background-color: transparent; */
-  /* color: var(--primary-color); */
-  /* border: 2px solid var(--primary-color); */
-  
-  /* سيبنا السطر ده عشان يحافظ على المسافة */
+  /* رجعنا الستايل الشفاف تاني لزرار الـ CV */
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
   margin-top: 1.5rem; 
 }
 
-/* شيلنا الـ hover الخاص بيه عشان ياخد الـ hover الأساسي */
-/*
 .hero__button--secondary:hover {
   background-color: var(--primary-color);
   color: #ffffff;
 }
-*/
 
 /* --- Work Section --- */
 .work {
@@ -317,7 +312,7 @@ section {
   background: #2a2a2a;
 }
 
-/* --- Contact Section --- */
+/* --- Contact Section (تم التعديل) --- */
 .contact {
   text-align: center;
 }
@@ -338,7 +333,14 @@ section {
   display: flex;
   flex-direction: column; /* خللي الزراير تحت بعض */
   align-items: center; /* وسطنهم في النص */
-  gap: 1rem; /* مسافة بين كل زرار */
+  gap: 1rem; /* مسافة بين زرار الإيميل وصف التليفونات */
+}
+
+/* تنسيق صف التليفونات الجديد */
+.contact__call-row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* مسافة بين زرارين التليفون */
 }
 
 /* --- نهاية تعديل Contact --- */
@@ -457,5 +459,11 @@ section {
   .work .section__title::after {
     left: 50%;
     transform: translateX(-50%);
+  }
+  
+  /* تعديل زراير الاتصال في الموبايل */
+  .contact__call-row {
+    flex-direction: column; /* خليهم فوق بعض */
+    gap: 1rem;
   }
 }
