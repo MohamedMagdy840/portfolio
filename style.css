@@ -126,14 +126,10 @@ section {
   opacity: 1;
 }
 
-/* --- Hero Section (REMOVED) --- */
-
-
 /* --- About Section Styles --- */
 .about {
   background-color: var(--card-bg-color);
-  /* --- هذا هو السطر الجديد --- */
-  padding-top: 8rem; /* ضفنا مسافة فوق عشان ميبقاش لازق في البار */
+  padding-top: 8rem; 
 }
 
 .about__content {
@@ -292,7 +288,7 @@ section {
   background: #2a2a2a;
 }
 
-/* --- Contact Section --- */
+/* --- Contact Section (تم التعديل) --- */
 .contact {
   text-align: center;
 }
@@ -307,6 +303,30 @@ section {
   color: var(--secondary-text-color);
   margin-bottom: 2rem;
 }
+
+/* تنسيق الزرارين الجداد */
+.contact__call-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* مسافة بين الزرارين */
+  margin-top: 1.5rem; /* مسافة تحت زرار الإيميل */
+}
+
+.hero__button--call {
+  background-color: transparent; /* خلفية شفافة */
+  color: var(--primary-color); /* لون الخط أحمر */
+  border: 2px solid var(--primary-color); /* برواز أحمر */
+  font-size: 0.9rem;
+  padding: 0.6rem 1.2rem;
+  letter-spacing: 0.5px;
+}
+
+.hero__button--call:hover {
+  background-color: var(--primary-color); /* العكس عند الهوفر */
+  color: #ffffff;
+}
+/* --- نهاية تعديل Contact --- */
+
 
 /* --- Footer --- */
 .footer {
@@ -344,7 +364,6 @@ section {
 }
 
 /* === أكواد الشهادات (عمود واحد) === */
-
 .certs {
   background-color: var(--bg-color); 
 }
@@ -395,15 +414,6 @@ section {
   .navbar__menu {
     display: none; 
   }
-
-  /* --- شيلنا الـ Hero فمش محتاجين ده ---
-  .hero__title {
-    font-size: 2.5rem;
-  }
-  .hero__description {
-    font-size: 1.1rem;
-  }
-  */
   
   .about__columns {
     flex-direction: column; 
@@ -433,4 +443,9 @@ section {
     transform: translateX(-50%);
   }
   
+  /* تعديل زراير الاتصال في الموبايل */
+  .contact__call-buttons {
+    flex-direction: column; /* خليهم فوق بعض */
+    gap: 0.75rem;
+  }
 }
