@@ -193,7 +193,31 @@ section {
   font-weight: 500;
 }
 
-/* CV Button Style */
+/* --- Hero Button (الزرار الأحمر) --- */
+/* ده الستايل الأساسي للزرار */
+.hero__button {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 2px solid var(--primary-color);
+  transition: all 0.3s ease;
+  margin: 0.5rem; /* ضفنا مسافة بسيطة حوالين كل زرار */
+}
+
+.hero__button:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+    opacity: 1;
+}
+
+
+/* CV Button Style (الزرار الشفاف) */
 .hero__button--secondary {
   background-color: transparent;
   color: var(--primary-color);
@@ -304,27 +328,20 @@ section {
   margin-bottom: 2rem;
 }
 
-/* تنسيق الزرارين الجداد */
-.contact__call-buttons {
+/* تنسيق مجموعة الزراير الجديدة */
+.contact__buttons-wrapper {
   display: flex;
-  justify-content: center;
-  gap: 1rem; /* مسافة بين الزرارين */
-  margin-top: 1.5rem; /* مسافة تحت زرار الإيميل */
+  flex-direction: column; /* خللي الزراير تحت بعض */
+  align-items: center; /* وسطنهم في النص */
+  gap: 1rem; /* مسافة بين كل زرار */
 }
 
-.hero__button--call {
-  background-color: transparent; /* خلفية شفافة */
-  color: var(--primary-color); /* لون الخط أحمر */
-  border: 2px solid var(--primary-color); /* برواز أحمر */
-  font-size: 0.9rem;
-  padding: 0.6rem 1.2rem;
-  letter-spacing: 0.5px;
-}
+/* إحنا شيلنا الكلاس القديم ده خلاص */
+/*
+.contact__call-buttons { ... }
+.hero__button--call { ... }
+*/
 
-.hero__button--call:hover {
-  background-color: var(--primary-color); /* العكس عند الهوفر */
-  color: #ffffff;
-}
 /* --- نهاية تعديل Contact --- */
 
 
@@ -443,9 +460,5 @@ section {
     transform: translateX(-50%);
   }
   
-  /* تعديل زراير الاتصال في الموبايل */
-  .contact__call-buttons {
-    flex-direction: column; /* خليهم فوق بعض */
-    gap: 0.75rem;
-  }
+  /* في الموبايل كده كده هيفضلوا تحت بعض ومظبوطين */
 }
