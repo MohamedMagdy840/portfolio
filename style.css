@@ -194,7 +194,6 @@ section {
 }
 
 /* --- Hero Button (الزرار الأحمر) --- */
-/* ده الستايل الأساسي للزرار */
 .hero__button {
   display: inline-block;
   background-color: var(--primary-color);
@@ -207,7 +206,7 @@ section {
   letter-spacing: 1px;
   border: 2px solid var(--primary-color);
   transition: all 0.3s ease;
-  margin: 0.5rem; /* ضفنا مسافة بسيطة حوالين كل زرار */
+  margin: 0.5rem; 
 }
 
 .hero__button:hover {
@@ -217,18 +216,24 @@ section {
 }
 
 
-/* CV Button Style (الزرار الشفاف) */
+/* === CV Button Style (تم التعديل) === */
 .hero__button--secondary {
-  background-color: transparent;
-  color: var(--primary-color);
-  border: 2px solid var(--primary-color);
+  /* السطور دي اتشالت عشان ياخد اللون الأحمر الأساسي */
+  /* background-color: transparent; */
+  /* color: var(--primary-color); */
+  /* border: 2px solid var(--primary-color); */
+  
+  /* سيبنا السطر ده عشان يحافظ على المسافة */
   margin-top: 1.5rem; 
 }
 
+/* شيلنا الـ hover الخاص بيه عشان ياخد الـ hover الأساسي */
+/*
 .hero__button--secondary:hover {
   background-color: var(--primary-color);
   color: #ffffff;
 }
+*/
 
 /* --- Work Section --- */
 .work {
@@ -312,7 +317,7 @@ section {
   background: #2a2a2a;
 }
 
-/* --- Contact Section (تم التعديل) --- */
+/* --- Contact Section --- */
 .contact {
   text-align: center;
 }
@@ -328,19 +333,13 @@ section {
   margin-bottom: 2rem;
 }
 
-/* تنسيق مجموعة الزراير الجديدة */
+/* تنسيق مجموعة الزراير */
 .contact__buttons-wrapper {
   display: flex;
   flex-direction: column; /* خللي الزراير تحت بعض */
   align-items: center; /* وسطنهم في النص */
   gap: 1rem; /* مسافة بين كل زرار */
 }
-
-/* إحنا شيلنا الكلاس القديم ده خلاص */
-/*
-.contact__call-buttons { ... }
-.hero__button--call { ... }
-*/
 
 /* --- نهاية تعديل Contact --- */
 
@@ -459,6 +458,4 @@ section {
     left: 50%;
     transform: translateX(-50%);
   }
-  
-  /* في الموبايل كده كده هيفضلوا تحت بعض ومظبوطين */
 }
